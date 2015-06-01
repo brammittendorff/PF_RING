@@ -1,1 +1,0 @@
-cmd_/home/bram/PF_RING/drivers/DNA/ixgbe-4.0.3-DNA/src/ixgbe.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.16.0-4-common/scripts/module-common.lds --build-id  -o /home/bram/PF_RING/drivers/DNA/ixgbe-4.0.3-DNA/src/ixgbe.ko /home/bram/PF_RING/drivers/DNA/ixgbe-4.0.3-DNA/src/ixgbe.o /home/bram/PF_RING/drivers/DNA/ixgbe-4.0.3-DNA/src/ixgbe.mod.o
