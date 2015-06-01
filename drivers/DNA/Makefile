@@ -18,8 +18,8 @@ e1000:
 e1000e:
 	# dirty fix for debian 7 - 8
 	mkdir /lib/modules/$(uname -r)/build/include/linux
-	ln -s /lib/modules/$(uname -r)/build/include/linux/utsrelease.h /lib/modules/$(uname -r)/build/include/generated/utsrelease.h
-	ln -s /lib/modules/$(uname -r)/build/include/linux/autoconf.h /lib/modules/$(uname -r)/build/include/generated/autoconf.h
+	ln -s /lib/modules/$(uname -r)/build/include/generated/utsrelease.h /lib/modules/$(uname -r)/build/include/linux/utsrelease.h
+	ln -s /lib/modules/$(uname -r)/build/include/generated/autoconf.h /lib/modules/$(uname -r)/build/include/linux/autoconf.h
 
 	# and after the fix make it
 	cd $(E1000E)-DNA/src; make
