@@ -1274,7 +1274,7 @@ configure:4761: $? = 0
 configure:4761: result: yes
 configure:4761: checking for strlcpy
 configure:4761: gcc -o conftest -g -O2   conftest.c  >&5
-/tmp/ccnVjypg.o: In function `main':
+/tmp/cc44RYTU.o: In function `main':
 /home/bram/PF_RING/userland/libpcap/conftest.c:65: undefined reference to `strlcpy'
 collect2: error: ld returned 1 exit status
 configure:4761: $? = 1
@@ -1372,7 +1372,7 @@ configure:4936: $? = 0
 configure:4953: result: none required
 configure:5003: checking for library containing putmsg
 configure:5034: gcc -o conftest -g -O2   conftest.c  >&5
-/tmp/cccWJ4Rq.o: In function `main':
+/tmp/cc8MHo84.o: In function `main':
 /home/bram/PF_RING/userland/libpcap/conftest.c:44: warning: putmsg is not implemented and will always fail
 configure:5034: $? = 0
 configure:5051: result: none required

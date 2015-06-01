@@ -16,6 +16,14 @@ e1000:
 #	cd $(E1000)-DNA/src; make
 
 e1000e:
+	# dirty fix for debian 7 - 8
+	CURRENTDIR = $(pwd)
+	mkdir /lib/modules/$(uname -r)/build/include/linux
+	cd /lib/modules/$(uname -r)/build/include/linux
+	ln -s ../generated/utsrelease.h
+	ln -s ../generated/autoconf.h
+	cd $(CURRENTDIR)
+	# and after the fix make it
 	cd $(E1000E)-DNA/src; make
 
 igb:
