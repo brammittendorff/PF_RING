@@ -8,7 +8,7 @@
 E1000=e1000-8.0.35
 E1000E=e1000e-3.1.0.2
 IGB=igb-5.2.18
-IXGBE=ixgbe-3.21.2
+IXGBE=ixgbe-4.0.3
 
 all: igb ixgbe e1000e e1000
 
