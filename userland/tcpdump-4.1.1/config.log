@@ -891,7 +891,7 @@ configure:5468: $? = 0
 configure:5468: result: yes
 configure:5481: checking for strlcat
 configure:5481: gcc -o conftest -DINET6 -g -O2   conftest.c  ../lib/libpfring.a -lpthread -lnuma -lrt  >&5
-/tmp/ccjNbE27.o: In function `main':
+/tmp/ccFrkqaf.o: In function `main':
 /home/bram/PF_RING/userland/tcpdump-4.1.1/conftest.c:74: undefined reference to `strlcat'
 collect2: error: ld returned 1 exit status
 configure:5481: $? = 1
@@ -976,7 +976,7 @@ configure: failed program was:
 configure:5481: result: no
 configure:5494: checking for strlcpy
 configure:5494: gcc -o conftest -DINET6 -g -O2   conftest.c  ../lib/libpfring.a -lpthread -lnuma -lrt  >&5
-/tmp/ccKliM2b.o: In function `main':
+/tmp/cc67jA5h.o: In function `main':
 /home/bram/PF_RING/userland/tcpdump-4.1.1/conftest.c:74: undefined reference to `strlcpy'
 collect2: error: ld returned 1 exit status
 configure:5494: $? = 1
@@ -1170,7 +1170,7 @@ configure:5636: $? = 0
 configure:5636: result: yes
 configure:5661: checking for library containing dnet_htoa
 configure:5692: gcc -o conftest -DINET6 -g -O2   conftest.c  ../lib/libpfring.a -lpthread -lnuma -lrt  >&5
-/tmp/ccb027Yn.o: In function `main':
+/tmp/ccIyDJkC.o: In function `main':
 /home/bram/PF_RING/userland/tcpdump-4.1.1/conftest.c:61: undefined reference to `dnet_htoa'
 collect2: error: ld returned 1 exit status
 configure:5692: $? = 1
@@ -1388,7 +1388,7 @@ configure:5954: $? = 0
 configure:5971: result: none required
 configure:6021: checking for library containing putmsg
 configure:6052: gcc -o conftest -DINET6 -g -O2   conftest.c  ../lib/libpfring.a -lpthread -lnuma -lrt  >&5
-/tmp/ccOfoyXy.o: In function `main':
+/tmp/cczqEqPK.o: In function `main':
 /home/bram/PF_RING/userland/tcpdump-4.1.1/conftest.c:62: warning: putmsg is not implemented and will always fail
 configure:6052: $? = 0
 configure:6069: result: none required
@@ -1821,7 +1821,7 @@ configure: failed program was:
 configure:6809: result: yes
 configure:6858: checking whether pcap_debug is defined by libpcap
 configure:6875: gcc -o conftest -DINET6 -g -O2   conftest.c ./../libpcap/libpcap.a   ../lib/libpfring.a -lpthread -lnuma -lrt  >&5
-/tmp/cclayJvp.o: In function `main':
+/tmp/cckWzrUA.o: In function `main':
 /home/bram/PF_RING/userland/tcpdump-4.1.1/conftest.c:78: undefined reference to `pcap_debug'
 collect2: error: ld returned 1 exit status
 configure:6875: $? = 1
