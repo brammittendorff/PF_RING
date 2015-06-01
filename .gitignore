@@ -3,6 +3,7 @@ tmp/**
 .DS_Store
 *.tmp
 *.bak
+*.log
 tmp/**/*
 *.swp
 *~.nib
