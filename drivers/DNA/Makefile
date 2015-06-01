@@ -16,12 +16,9 @@ e1000:
 #	cd $(E1000)-DNA/src; make
 
 e1000e:
-	# dirty fix for debian 7 - 8
-	mkdir /lib/modules/$(uname -r)/build/include/linux
-	ln -s /lib/modules/$(uname -r)/build/include/generated/utsrelease.h /lib/modules/$(uname -r)/build/include/linux/utsrelease.h
-	ln -s /lib/modules/$(uname -r)/build/include/generated/autoconf.h /lib/modules/$(uname -r)/build/include/linux/autoconf.h
-
-	# and after the fix make it
+	mkdir /lib/modules/$(shell uname -r)/build/include/linux
+	ln -s /lib/modules/$(shell uname -r)/build/include/generated/utsrelease.h /lib/modules/$(shell uname -r)/build/include/linux/utsrelease.h
+	ln -s /lib/modules/$(shell uname -r)/build/include/generated/autoconf.h /lib/modules/$(shell uname -r)/build/include/linux/autoconf.h
 	cd $(E1000E)-DNA/src; make
 
 igb:
@@ -32,6 +29,7 @@ ixgbe:
 
 clean:
 #	cd $(E1000)-DNA/src; make clean
+	sudo rm -rf /lib/modules/$(shell uname -r)/build/include/linux
 	cd $(E1000E)-DNA/src; make clean
 	cd $(IGB)-DNA/src; make clean
 	cd $(IXGBE)-DNA/src; make clean
